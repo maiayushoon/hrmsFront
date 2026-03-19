@@ -58,7 +58,7 @@ src/api/api.ts
 
 Example:
 
-baseURL: "http://localhost:8000"
+baseURL: "https://hrmsback-fvwe.onrender.com"
 4. Start Development Server
 npm run dev
 5. Open in Browser
