@@ -52,7 +52,7 @@ function AnimatedRoutes({ employeeCount }: { employeeCount: number }) {
             </motion.div>
           }
         />
-        <Route path="/" element={<Navigate to="/dashboard" replace />} />
+        <Route path="/dashboard" element={<Navigate to="/dashboard" replace />} />
         <Route path="*" element={<div className="p-8">Page Not Found</div>} />
       </Routes>
     </AnimatePresence>
