@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:8000/api",
+  baseURL: "https://hrmsback-fvwe.onrender.com/api",
+  // baseURL: "http://localhost:8000/api",
   headers: { "Content-Type": "application/json" },
 });
 
