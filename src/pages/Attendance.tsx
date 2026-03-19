@@ -9,7 +9,7 @@ export default function AttendancePage() {
   const [form, setForm] = useState<Attendance>({
     employeeId: "",
     date: new Date().toISOString().split("T")[0],
-    status: "present",
+    status: "Present",
   });
   const [filterDates, setFilterDates] = useState({ start: "", end: "" });
 
@@ -95,11 +95,11 @@ export default function AttendancePage() {
             className="w-full bg-gray-50 border border-gray-200 p-3 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none transition"
             value={form.status}
             onChange={(e) =>
-              setForm({ ...form, status: e.target.value.toLowerCase() as "present" | "absent" })
+              setForm({ ...form, status: e.target.value.toLowerCase() as "Present" | "Absent" })
             }
           >
-            <option value="present">Present</option>
-            <option value="absent">Absent</option>
+            <option value="Present">Present</option>
+            <option value="Absent">Absent</option>
           </select>
         </div>
 
